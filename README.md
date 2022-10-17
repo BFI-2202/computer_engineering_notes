@@ -9,4 +9,5 @@
 | Дата | Тип занятия | Рассмотренные темы | Ссылка на конспект |
 |------|------------|----------------------|--------------------|
 | 03.10.2022 | Лекция | Табличные методы минимизации, цифровые комбинационные устройства | [tex](years/year_01/semester_01/october/03-10-2022.tex), [pdf](years/year_01/semester_01/october/render/03-10-2022.pdf)       |
+| 17.10.2022 | Лекция | Шифраторы, дешифраторы, мультиплексоры, демультиплексоры | [tex](years/year_01/semester_01/october/17-10-2022.tex), [pdf](years/year_01/semester_01/october/render/17-10-2022.pdf)       |
 | **Общий документ** | --- | --- | [tex](years/year_01/semester_01/october/october.tex), [pdf](years/year_01/semester_01/october/render/october.pdf) |
