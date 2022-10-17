@@ -6,6 +6,7 @@
 \usepackage[russian]{babel}
 
 \usepackage{amsmath}
+\usepackage{graphicx}
 
 \title{Вычислительная техника}
 \author{Лисид Лаконский}
@@ -93,5 +94,76 @@ $S$ - сумма, $P$ - перенос
 Схемы тут не будет, так как в LaTeX крайне неудобно прикреплять картинки. По крайней мере, мне лень сейчас разбираться, как тут в Overleaf это делать.
 
 Складываются аргументы, а потом результат работы сумматора складывается с переносом.
+
+\pagebreak
+\section{Вычислительная техника - 17.10.2022}
+
+\subsection{Шифраторы}
+
+\begin{flushleft}
+
+\includegraphics[width=\textwidth]{coder.png}
+
+\subsubsection{Устранение неоднозначности}
+
+Устранять неоднозначность можно с помощью приоритетного шифратора - дополнительный выход $p$ - выход признака невозбуждения: 0 - возбужден хотя бы один из входов, 1 - в противном случае, дополнительный вход $E$.
+
+\subsection{Дешифраторы}
+
+\subsubsection{Линейные дешифраторы}
+
+\includegraphics[width=\textwidth]{decoder.png}
+
+\hfill
+
+Ниже приведено обозначение микросхемы К155ИД4
+
+\hfill
+
+\includegraphics[width=\textwidth]{k155id4.png}
+
+Существуют также пирамидальные, каскадные дешифраторы.
+
+\subsubsection{Каскадный дешифратор}
+
+\includegraphics[width=\textwidth]{cascade.png}
+
+\subsection{Мультплексор}
+
+Мультиплексор обеспечивает коммутацию на вход одного из входных сигналов.
+
+Формула:
+
+$y = \overline{x_3}\overline{x_2}\overline{x_1}D_0 + \overline{x_3}\overline{x_2}x_1D_1 + \overline{x_3}x_2\overline{x_1}D_2 + ... + x_3x_2x_1D_7$
+
+\hfill
+
+В формулу может быть добавлен управляющий сигнал:
+
+$y = \overline{x_3}\overline{x_2}\overline{x_1}D_0\overline{v} + \overline{x_3}\overline{x_2}x_1D_1\overline{v} + \overline{x_3}x_2\overline{x_1}D_2\overline{v} + ... + x_3x_2x_1D_7\overline{v}$
+
+\subsubsection{Схема}
+
+\includegraphics[width=\textwidth]{multiplexer.png}
+
+\subsubsection{Схема в multisim}
+
+\includegraphics[width=\textwidth]{multiplexer-multisim.png}
+
+\subsection{Демультиплексор}
+
+Демультиплексор — это логическое устройство, предназначенное для переключения сигнала с одного информационного входа на один из информационных выходов.
+
+\hfill
+
+Формула:
+
+$y_0 = \overline{x_2} \overline{x_1} D, y_1 = \overline{x_1}D, y_2 = x_2\overline{x_1}D, y_3 = x_2 x_1 D$
+
+\subsubsection{Схема}
+
+\includegraphics[width=\textwidth]{demultiplexer.png}
+
+\end{flushleft}
 
 \end{document}
